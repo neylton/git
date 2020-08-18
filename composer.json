@@ -1,0 +1,5 @@
+{
+    "require": {
+        "neylton/database": "^1.0"
+    }
+}
