@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e11af7b6d81fbf276023cc559ae531cf",
+    "content-hash": "3e1f6948bb727bedf57aff629d6025a4",
     "packages": [
         {
             "name": "neylton/database",

@@ -32,6 +32,12 @@ class Command extends Record
     }
 
 }
+				// Transaction::open();
+				// $commands = Command::orderBy('com_command','asc')->load();
+				// $start = strrpos($commands[4]->com_desc,'#');
+				// echo $commands[4]->com_desc;
+				// var_dump($start);
+				// var_dump(strlen($commands[4]->com_desc));
 
 if(isset($_GET['class']) && !empty($_GET['class']) ){
 	switch($_GET['class'])
@@ -110,13 +116,19 @@ if(isset($_GET['class']) && !empty($_GET['class']) ){
 			$commands = Command::orderBy('com_command','asc')->load();
 			foreach($commands as $command):
 				$start = strrpos($command->com_desc,'#');
-				$length = strlen($command->com_desc);
-				$part = substr($command->com_desc,$start,$length-$start);
+				if($start){
+					$length = strlen($command->com_desc);
+					$part = substr($command->com_desc,$start,$length-$start);
+					$com_command = $part = str_replace($part, '<br><b>'.$part.'</b>', $command->com_desc);
+				}else{
+					$com_command = $command->com_desc;
+				}
+
 			?>
 			<tr>
 				<td><?= $command->nome_tecnologia;?></td>
 				<td><?= $command->com_command;?></td>
-				<td><?= str_replace($part, '<b>'.$part.'</b>', $command->com_desc);?></td>
+				<td><?= $com_command;?></td>
 			</tr>
 			<?php
 			endforeach;
