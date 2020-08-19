@@ -13,7 +13,8 @@ window.addEventListener('load',function(){
 				new Alerts({message : res.response.message, type:'error'});
 			}else if(!res.error){
 				new Alerts({message : res.response.message, type:'success'});	
-				location.reload();			
+				location.reload();
+				//atualizar página caso os dados seja cadastrado!			
 			}
 		})
 		xhr.send(formData);

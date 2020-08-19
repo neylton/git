@@ -46,6 +46,7 @@ if(isset($_GET['class']) && !empty($_GET['class']) ){
 			try{
 				Transaction::open();
 				$command = new Command();
+
 				$_POST = array_filter($_POST);
 				$command->fromArray($_POST);
 				$id = $command->store();
@@ -71,7 +72,7 @@ if(isset($_GET['class']) && !empty($_GET['class']) ){
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-	<title>Comandos do git</title>
+	<title>Comandos do git - Comandos e Tecnologias</title>
 	<link rel="stylesheet" type="text/css" href="css/Table.css">
 	<link rel="stylesheet" type="text/css" href="css/Boot.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
