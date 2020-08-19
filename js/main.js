@@ -12,7 +12,8 @@ window.addEventListener('load',function(){
 			if(res.error){
 				new Alerts({message : res.response.message, type:'error'});
 			}else if(!res.error){
-				new Alerts({message : res.response.message, type:'success'});				
+				new Alerts({message : res.response.message, type:'success'});	
+				location.reload();			
 			}
 		})
 		xhr.send(formData);
