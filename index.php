@@ -113,7 +113,7 @@ if(isset($_GET['class']) && !empty($_GET['class']) ){
 			try{
 			Transaction::open();
 
-			$commands = Command::orderBy('com_command','asc')->load();
+			$commands = Command::orderBy('com_idtec','asc')->orderBy('com_command','asc')->load();
 			foreach($commands as $command):
 				$start = strrpos($command->com_desc,'#');
 				if($start){
