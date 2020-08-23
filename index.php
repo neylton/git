@@ -75,7 +75,7 @@ if(isset($_GET['class']) && !empty($_GET['class']) ){
 	<title>Comandos do git - Comandos e Tecnologias</title>
 	<link rel="stylesheet" type="text/css" href="css/Table.css">
 	<link rel="stylesheet" type="text/css" href="css/Boot.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<link rel="stylesheet" type="text/css" href="css/Alerts.css">
 	<!-- JAVASCRIPT -->
 	<script type="text/javascript" src="js/main.js"></script>
