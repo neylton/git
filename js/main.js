@@ -11,6 +11,7 @@ window.addEventListener('load',function(){
 			let res = this.response;
 			if(res.error){
 				new Alerts({message : res.response.message, type:'error'});
+				//Se não for cadastrado vai receber erro true
 			}else if(!res.error){
 				new Alerts({message : res.response.message, type:'success'});	
 				location.reload();
