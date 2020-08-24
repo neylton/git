@@ -73,7 +73,6 @@ if(isset($_GET['class']) && !empty($_GET['class']) ){
 <head>
 	<meta charset="utf-8">
 	<title>Comandos do git - Comandos e Tecnologias</title>
-	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/Table.css">
 	<link rel="stylesheet" type="text/css" href="css/Boot.css">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
@@ -136,7 +135,7 @@ if(isset($_GET['class']) && !empty($_GET['class']) ){
 			<?php
 			endforeach;
 			}catch(Exception $e){
-				echo ($e->getMessage());
+				var_dump($e->getMessage());
 			}
 			
 			
