@@ -72,7 +72,8 @@ if(isset($_GET['class']) && !empty($_GET['class']) ){
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-	<title>Comandos do git - Comandos e Tecnologias</title>
+	<title>Comandos do git - Comandos e Tecnologias - Empresa de tecnologia</title>
+	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/Table.css">
 	<link rel="stylesheet" type="text/css" href="css/Boot.css">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
@@ -105,6 +106,7 @@ if(isset($_GET['class']) && !empty($_GET['class']) ){
 	<table class="table">
 		<thead>
 			<tr>
+				<th>Id</th>
 				<th>Tecnologia</th>
 				<th>Comando</th>
 				<th>Descrição</th>
@@ -128,6 +130,7 @@ if(isset($_GET['class']) && !empty($_GET['class']) ){
 
 			?>
 			<tr>
+				<td><?= $command->com_id;?></td>
 				<td><?= $command->nome_tecnologia;?></td>
 				<td><?= $command->com_command;?></td>
 				<td><?= $com_command;?></td>
