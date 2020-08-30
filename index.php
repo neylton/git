@@ -76,6 +76,7 @@ if(isset($_GET['class']) && !empty($_GET['class']) ){
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/Table.css">
 	<link rel="stylesheet" type="text/css" href="css/Boot.css">
+	<!-- MELHORANDO O DESIGN -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/Alerts.css">
 	<!-- JAVASCRIPT -->
