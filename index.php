@@ -3,7 +3,7 @@ require 'vendor/autoload.php';
 define('DBS',array(
 
     'tecnologia' => array(
-        'host'   => 'localhost',
+        'host'   => 'localhost:3307',
         'user'   => 'root',
         'pass'   => '',
         'dbname' => 'tecnologia',
@@ -13,6 +13,7 @@ define('DBS',array(
 ));
 use Database\Record;
 use Database\Transaction;
+
 
 class Tecnologia extends Record
 {
@@ -32,6 +33,7 @@ class Command extends Record
     }
 
 }
+
 				// Transaction::open();
 				// $commands = Command::orderBy('com_command','asc')->load();
 				// $start = strrpos($commands[4]->com_desc,'#');
